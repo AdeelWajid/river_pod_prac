@@ -20,3 +20,13 @@ Widget text16Normal(
         TextStyle(color: color, fontSize: 16.sp, fontWeight: FontWeight.normal),
   );
 }
+
+Widget text14Normal(
+    {String text = "", Color color = AppColors.primaryThreeElementText}) {
+  return Text(
+    text,
+    textAlign: TextAlign.center,
+    style:
+        TextStyle(color: color, fontSize: 14.sp, fontWeight: FontWeight.normal),
+  );
+}
