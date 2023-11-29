@@ -54,7 +54,7 @@ class Welcome extends ConsumerWidget {
                   ],
                 ),
                 Positioned(
-                  bottom: 50.h,
+                  bottom: 40.h,
                   child: DotsIndicator(
                     dotsCount: 3,
                     position: index,

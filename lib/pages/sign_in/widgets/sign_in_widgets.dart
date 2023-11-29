@@ -3,6 +3,18 @@ import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:river_pod/common/utils/app_colors.dart';
 import 'package:river_pod/common/widgets/text_widgets.dart';
 
+Widget appTextField({String text = ""}){
+  return Container(
+    padding: EdgeInsets.symmetric(horizontal: 25.w),
+    child: Column(
+      crossAxisAlignment: CrossAxisAlignment.start,
+      children: [
+        text14Normal(text:text),
+      ],
+    ),
+  );
+}
+
 Widget thirdPartyLogin() {
   return Container(
       margin: EdgeInsets.only(left: 80.w, right: 80.w, top: 40.h, bottom: 20.h),

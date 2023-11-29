@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'package:river_pod/common/widgets/text_widgets.dart';
 import 'package:river_pod/pages/sign_in/widgets/sign_in_widgets.dart';
 
 class SignIn extends StatelessWidget {
@@ -13,8 +15,14 @@ class SignIn extends StatelessWidget {
               appBar: buildAppbar(),
               backgroundColor: Colors.white,
               body: Column(
+                crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
                   thirdPartyLogin(),
+                  Center(child: text14Normal(text: "Or use your email account to login")),
+                  SizedBox(
+                    height: 50.h,
+                  ),
+                  appTextField(text: "Email")
                 ],
               ))),
     );
